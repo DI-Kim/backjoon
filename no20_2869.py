@@ -1,3 +1,5 @@
+import math
+
 A, B, V = map(int, input().split())
 # days = 0
 # while True:
@@ -8,3 +10,4 @@ A, B, V = map(int, input().split())
 #     V += B
 # print(days)
 
+print(math.ceil((V - A) / (A - B)) + 1)
